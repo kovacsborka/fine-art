@@ -1,4 +1,24 @@
 .navbar {
+    height: 70px;
+    width: 100%;
+    background-color: #203339;
+    color: #e5e5d9;
 
-    color: blue;
+}
+
+.navbarlist {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+
+}
+
+.logo {
+    width: 100px;
+    height: auto;
 }
