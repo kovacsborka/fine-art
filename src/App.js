@@ -1,20 +1,20 @@
-import { BrowserRouter as Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import './App.css';
-import Collections from './components/Collections';
-import Navbar from './components/Navbar';
+import Collections from './components/Collections/Collections';
+import Navbar from './components/Navbar/Navbar';
 
 
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar/>
+
       <Routes>
-        <Route path="/collections">
-          <Collections/>
-        </Route>
+        <Route path="/collections" element={<Collections/>}/>
+        
       </Routes>
-    </Router>
+    </BrowserRouter>
 
   );
 }
